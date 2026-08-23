@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
+import { BottomNav } from './components/BottomNav';
 import { Home } from './pages/Home';
 import { CalculatorPage } from './pages/CalculatorPage';
 import { GamesPage } from './pages/GamesPage';
@@ -29,6 +30,7 @@ export default function App() {
             </Routes>
           </div>
         </div>
+        <BottomNav />
       </div>
     </Router>
   );
