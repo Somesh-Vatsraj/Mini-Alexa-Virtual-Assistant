@@ -32,6 +32,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -55,6 +56,36 @@ body {
   padding: 2rem;
   padding-bottom: 5rem;
 }
+/* Mobile Bottom Navigation Styles */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-sidebar {
+    display: none !important;
+  }
+  
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+
+  .main-content {
+    padding-bottom: 4rem;
+  }
+}
+
 
 /* Glassmorphism Cards */
 .glass-card {
