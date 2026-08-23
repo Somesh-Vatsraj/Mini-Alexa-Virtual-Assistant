@@ -1,6 +1,6 @@
 export const getRecommendation = (mood) => {
   switch (mood) {
-    Id: case 'Happy':
+    case 'Happy':
       return { activity: 'Listen to upbeat music or go for an energetic run!', type: 'Music / Exercise' };
     case 'Bored':
       return { activity: 'Play our Number Guessing Game or watch a sci-fi movie.', type: 'Game / Movie' };
